@@ -3,13 +3,13 @@
 
 import sys
 import random
-from abc import *
+from abc import ABC, abstractmethod
 from enum import Enum
 
 import requests
 
 """Represents an abstract math concept."""
-class MathObject(metaclass = ABCMeta):
+class MathObject(ABC):
 
     """Returns a name."""
     @abstractmethod
@@ -27,7 +27,7 @@ class MathObject(metaclass = ABCMeta):
 
 ### ------------------------------------------------------------------------
 
-class NumberBase(MathObject, metaclass = ABCMeta):
+class NumberBase(MathObject):
 
     @abstractmethod
     def get_random_sample(): pass
@@ -36,6 +36,7 @@ class NumberBase(MathObject, metaclass = ABCMeta):
 
 class ResourceTag(Enum):
      WIKIPEDIA = 1
+
 
 ### ------------------------------------------------------------------------
 

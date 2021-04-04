@@ -23,7 +23,7 @@ class Natural():
     ### Redundancy: get_sample, get_random_sample
     ### Strange method with strange result.
     def get_sample(self):
-        return 42;
+        return 42
 
     def get_random_sample(self):
         return random.randrange(0, 100)
@@ -86,7 +86,7 @@ class Number:
     ### Redundancy: get_sample, get_random_sample
     ### Strange method with strange result.
     def get_sample(self):
-        return 7;
+        return 7
 
     def get_random_sample(self):
         return random.randrange(0, 100)

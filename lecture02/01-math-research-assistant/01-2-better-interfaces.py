@@ -3,34 +3,35 @@
 
 import sys
 import random
-from abc import *
+from abc import ABC, abstractmethod
 
 import requests
 
-class MathObject(metaclass = ABCMeta):
+class MathObject(ABC):
+    @abstractmethod
+    def get_name(self):
+        pass
 
     @abstractmethod
-    def get_name(self): pass
-
-    @abstractmethod
-    def get_description(self): pass
+    def get_description(self):
+        pass
 
     ### Invalid responsibility (why it knows about Wikipedia?)
     ### Invalid design: what about other langauges, other resources?
     @abstractmethod
-    def get_wikipedia_link(): pass
+    def get_wikipedia_link(self):
+        pass
 
 ### ------------------------------------------------------------------------
 
-class NumberBase(MathObject, metaclass = ABCMeta):
-
+class NumberBase(MathObject):
     @abstractmethod
-    def get_random_sample(): pass
+    def get_random_sample(self):
+        pass
 
 ### ------------------------------------------------------------------------
 
 class Number(NumberBase):
-
     def get_name(self):
         return "Number"
 
@@ -84,9 +85,8 @@ than 1 that cannot be formed by multiplying two smaller natural numbers."""
 ### ------------------------------------------------------------------------
 
 ### Uses MathObject as interface.
-class WikipediaDownloader():
-
-    def __init__(self, math_object : MathObject):
+class WikipediaDownloader:
+    def __init__(self, math_object: MathObject):
         self.__link = math_object.get_wikipedia_link()
 
     def download_content(self):
