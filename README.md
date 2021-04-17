@@ -234,30 +234,30 @@ In this course, you’ll learn the Software Engineering and Software Design disc
 
 ---------------------------------------------------
 
-# Control work
+### Assignment 1: Interfaces, implementations, Inversion of Control
 
-### Control Questions 1: Interfaces, implementations, Inversion of Control
 
-1. How did you understand what is interface in Software Engineering?
-2. Provide some example of interface in Python.
-3. Design an interface for objects which could report their own description to the console.
-  * Provide 2 implementations of this interface. You are free to choose any business domain for this.
-4. Design another interface `IPrinter` for a subsystem which can output a string to different sources.
-   * Provide 2 implementations of this interface:
-     - Console printer
-     - File printer
-   * Make `file printer` implementation configurable (think about what config it should take).
-5. Rework the interface and the implementations from the 3rd paragraph so that the output source could be defined by the interface from the 4th paragraph.
+Task 1: Interfaces, implementations, Inversion of Control
 
-### Control Questions 2: Layering
-1. What do you think about layering of applications?
-2. Provide a diagram. The following layers should be presented and be properly linked by one-directional arrows:
-  - Business Logic
-  - Implementation
-  - Interfaces
-3. Can you provide a rationale why the layers are related in a such way?
+1. What is the purpose of an interface in software engineering?
 
-### Control Questions 3: Code practice
-1. Bring the code of Math Assistant with the functionality we described on the lessons.
-2. List the entities you have in your code: interfaces, implementations, functions, etc.
-3. Arrange these entities on the layering diagram.
+2. Provide an example of an interface in Python.
+
+3. Choose any business domain and write an example of an interface class and implementation of two derived classes.
+   The interface must contain at least one function (e.g. printDescription) to print the object description to the console.
+
+* the interface should inherit from abc.ABC
+* the method in the interface should be decorated with @abstractmethod decorator
+
+4. Design IOutputStream interface that contains at least one function (e.g. print) that prints the given string.
+   And make at least two classes that implement this interface:
+* ConsoleStream
+* FileStream (What arguments the constructor should have?)
+
+5. Rework the implementation of the classes from the #3. These classes must receive an IOutputStream object in the constructor and use it in the printDescription method instead of printing its description to the console.
+
+* Each interface should be defined in a separate module.
+* Create a python module containing the main function.
+  Demonstrate the dependency injection (Inject IOutputStream into the classes from #3)
+  Demonstrate printing the object description(from #3) into different OutputStreams.
+  Why does this example demonstrate an inversion of control?
