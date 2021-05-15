@@ -23,6 +23,7 @@ class IEmailTransmissionResult(ABC):
 
 
 class IMailService(ABC):
+    @abstractmethod
     def send_mail(self, email: IMail) -> IEmailTransmissionResult:
         # send email
         pass

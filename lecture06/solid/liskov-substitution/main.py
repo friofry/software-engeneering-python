@@ -18,7 +18,7 @@ def main():
     # create_user_controller = CreateUserController(mail_gun_service)    # Another feature request
 
     # 3. Conclusion:
-    # Because we can interchange which implementation of an IEmailService we pass in, we're adhering to LSP.
+    # Because we can interchange which implementation of an IMailService we pass in, we're adhering to LSP.
 
 
 # python -m main.py
