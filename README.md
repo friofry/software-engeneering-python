@@ -47,10 +47,6 @@ In this course, you’ll learn the Software Engineering and Software Design disc
   - Implementation
 
 2. Inversion of Control
-- Overview
-  - What is Inversion of Control principle?
-  - OOP-like Interfaces
-  - Functional Interfaces
 - Interfaces design
   - Consistency
   - Completeness
@@ -58,91 +54,34 @@ In this course, you’ll learn the Software Engineering and Software Design disc
   - Simplicity
   - Easy usage
   - Single Responsibility
-- Dependency Injection
-- IoC - сontainers
+- Dependency Inversion
+- Inversion of Control
+
 
 3. Layering & Modularity
-- Layers by functionality
-  - Domain Model
-  - Business Logic
-  - Application
-  - Persistence
-  - DB Model
-  - Presentation
-  - Implementation / Runtime
-  - APIs, Interfaces, Domain Languages
-- Pure / Impure
-- Data / Logic
-- Declaration / Evaluation
 
-4. Software Reliability and Correctness
-- Correctness
-- Testability
-- Testing practices
+4. Object-oriented idioms in Python
+- Variables
+- Tuples
+- Immutability
+- Shallow copy
+- Deep copy
+- Function parameters
+- Garbage collection
 
-5. Design Principles
-- SOLID
-- GRASP
-- YAGNI
-- KISS
-- DRY
-- Demetra Law, Principle of Least Power (isolation)
+5. ABC Interfaces
+   
+6. Design Principles: SOLID
 
-### Part II. Advanced Software Design
-
-6. Design Patterns
+7. Design Patterns 1
 - OOP Design Patterns
-- - Task
-- - Wrapper, Adapter
-- - Singleton
-- - Abstract Factory
-- - Builder
+- - Adapter
 - - Visitor
-- - Interpreter
-  - ...
-- FP Design Patterns
-
-7. Domain Specific Languages & Domain Driven Development
-- Domain Driven Development
-- Embedded DSLs
-- External DSLs
-
-8. Error Handling
-- Defensive programming
-- Exceptions and Errors
-  * Exceptions vs Errors
-  * Exception hierarchies
-  * Error domains
-  * nulls vs optionals vs None
-  * Handling techniques
-    - try/catch
-    - Maybe & Either
-    - Continuations
-    - Make invalid cases unrepresentable
-  * Failure to list of successes
-- The “Let it Crash” philosophy
-- Bugs are not errors and exceptions
-
-9. Resources Management
-- Constructors and destructors
-- RAII
-- Handling resources in multithreaded environment
-
-10. Data Flow Design
-- Fluent Interface
-- Data Flow Diagrams
-- Data Flow Style
-- OOP-based Data Flow Design
-- FP-based Data Flow Design
-- Stream and Reactive programming
-
-11. Appendix. OOP problems
-- The Circle-Ellipse (or Square-Rectangle) Problem
-- The Diamond Problem
-- Deep inheritance problems
-
-12. Design Patterns II
-
+  
+8. Design Patterns 2
+- - Singleton
+- - Strategy
+- - Decorator
 ---------------------------------------------------
 
 # Math Assistant
