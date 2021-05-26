@@ -13,7 +13,7 @@ In this course, you’ll learn the Software Engineering and Software Design disc
 - “Clean Architecture” Robert Martin
 - “Domain Specific Languages“ Martin Fowler
 - “Design Patterns: Elements of Reusable Object-Oriented Software” (aka “Gang of Four’s Book”) Erich Gamma, Richard Helm, Ralph Johnson, & John Vlissides
-- “Functional Design and Architecture” Alexander Granin :)
+- “Functional Design and Architecture” Alexander Granin
 
 ### Part I. Software Design Basics
 
